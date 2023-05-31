@@ -1,11 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
 
+:root{
+  --theme-color-purple-1: #9b3490;
+}
+
 body, html{
  width: 100%;
  height: 100%;
  padding: 0;
  margin: 0; 
  font-family: 'Roboto', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.bg-gray{
+  background-color: gray;
+}
+.bg-white{
+  background-color: white;
 }
 
 .line-contact{
@@ -19,10 +35,101 @@ body, html{
   width: 80%;
   min-height: 10px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
   color: #444;
+  position: relative;
 }
+
+/* CLASSES DE FLEX*/
+.flex{
+  display: flex;
+}
+
+.flex-direction-column{
+  flex-direction: column;
+}
+
+.flex-direction-row{
+  flex-direction: row;
+}
+
+.justify-content-between{
+  justify-content: space-between;
+}
+
+.justify-content-center{
+  justify-content: center;
+}
+
+.justify-content-around{
+  justify-content: space-around;
+}
+
+.justify-content-start{
+  justify-content: flex-start;
+}
+
+.align-item-center{
+  align-items: center;
+}
+
+.align-item-stretch{
+  align-items: stretch;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+/* CLASSES DE FLEX*/
+
+/* CLASSES DE TEXT*/
+
+.text-center{
+  text-align: center;
+}
+
+.tc-white{
+  color : white;
+}
+
+.tc-purple{
+  color : var(--theme-color-purple-1);
+}
+
+.fs-10{
+  font-size: 10px;
+}
+
+.fs-15{
+  font-size: 15px;
+}
+
+.fs-20{
+  font-size: 20px;
+}
+
+.fs-25{
+  font-size: 25px;
+}
+
+.fs-35{
+  font-size: 35px;
+}
+
+.fs-40{
+  font-size: 40px;
+}
+
+.fs-45{
+  font-size: 45px;
+}
+
+.fw-bold{
+  font-weight: bold;
+}
+
+/* CLASSES DE TEXT*/
+
 
 .contacts{
   display: flex;
@@ -46,6 +153,181 @@ body, html{
 }
 
 .top-icons{
-  color: royalblue;
+  color: var(--theme-color-purple-1);
   font-size: 25px;
+}
+
+.menu{
+  list-style: none;
+  margin: 0px;
+}
+
+.menu li{
+  padding: 10px 15px;
+}
+.menu li a{
+  text-decoration: none;
+  color: #333;
+  transition: all linear 0.5s;
+  font-weight: 600;
+  color: #64255e;
+
+}
+.menu li a:hover{
+  color: var(--theme-color-purple-1);
+}
+
+.brand img{
+  width: 200px;
+}
+
+.shadow{
+  width: 100%;
+  height: 100%;
+  background-color: purple;
+  position: absolute;
+  opacity: 0.8;
+}
+
+.container-banner{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.row{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.col-lg-6{
+  width: 50%;
+  padding: 0px 15px;
+  box-sizing: border-box;
+}
+.m-0{
+  margin: 0;
+}
+.p-0{
+  padding: 0;
+}
+.m-15{
+  margin: 15px;
+}
+.p-15{
+  padding: 15px;
+}
+
+.p-10{
+  padding: 15px;
+}
+
+.-t-margin-50{
+  margin-top: -50px;
+}
+.-t-margin-80{
+  margin-top: -80px;
+}
+.-t-margin-90{
+  margin-top: -90px;
+}
+
+.t-margin-0{
+  margin-top: 5px;
+}
+
+.t-margin-2{
+  margin-top: 10px;
+}
+
+.t-margin-3{
+  margin-top: 15px;
+}
+
+.t-margin-50{
+   margin-top: 50px;
+}
+
+.l-margin-1{
+  margin-left: 5px;
+}
+
+.l-margin-2{
+  margin-left: 10px;
+}
+
+.l-margin-3{
+  margin-left: 15px;
+}
+
+.r-margin-1{
+  margin-right: 5px;
+}
+
+.r-margin-2{
+  margin-right: 10px;
+}
+
+
+.r-margin-3{
+  margin-right: 15px;
+}
+
+.btn-solid-white{
+  padding: 10px 20px;
+  border: 2px solid white;
+  background-color: white;
+  color: purple;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all linear 0.2s;
+}
+
+.btn-solid-white:hover{
+  background-color: transparent;
+  color: white;
+}
+
+.btn-solid-inline{
+  padding: 10px 20px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all linear 0.2s;
+
+}
+
+.btn-solid-inline:hover{
+  background-color: white;
+  color: purple;
+}
+.background-header{
+  min-height: 500px;
+  background-position: right center;
+  background-size: cover;
+  position: relative;
+}
+
+.box-header{
+  width: 25%;
+  min-width: 180px;
+  padding: 35px 15px;
+  box-sizing: border-box;
+}
+
+.box-shadow-1{
+  box-shadow: 0px 0px 10px gray;
+}
+
+.border-radius-10{
+  border-radius: 10px;
+}
+
+.z-index-10{
+  z-index: 10;
 }

@@ -9,6 +9,10 @@ import {
     faPhone, 
     faEnvelope, 
     faLocationDot,
+    faHouseChimneyMedical,
+    faPeopleGroup,
+    faUserDoctor,
+    faAward
 } from '@fortawesome/free-solid-svg-icons'
 
 import { 
@@ -26,7 +30,11 @@ library.add(
     faFacebookSquare, 
     faTwitterSquare, 
     faLinkedin, 
-    faInstagramSquare
+    faInstagramSquare,
+    faHouseChimneyMedical,
+    faPeopleGroup,
+    faUserDoctor,
+    faAward
 )
 
 const app = createApp(App)
