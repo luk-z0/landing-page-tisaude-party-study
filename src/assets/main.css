@@ -12,6 +12,10 @@ body, html{
  font-family: 'Roboto', sans-serif;
 }
 
+main{
+  padding-bottom: 300px;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -331,3 +335,11 @@ body, html{
 .z-index-10{
   z-index: 10;
 }
+
+.box-image-about{
+  width: 100%;
+  height: 300px;
+  background-color: #64255e;
+  position: relative;
+}
+

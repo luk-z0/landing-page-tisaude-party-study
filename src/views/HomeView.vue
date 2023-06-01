@@ -101,7 +101,7 @@ import brand from "../assets/images/brand.png"
       <div class="container t-margin-50">
         <div class="row flex flex-wrap">
           <div class="col-lg-6 flex flex-direction-column justify-content-center" style="background-color: #999">
-            coluna 1
+            <div class="box-image-about"></div>
           </div>
           <div class="col-lg-6 flex flex-direction-column justify-content-center" style="background-color: #ccc">
             coluna 2
