@@ -133,8 +133,35 @@ import doctorAbout from "../assets/images/doctors.jpg"
         </div>
       </div>
       <div class="container t-margin-50">
-        <div class="row flex flex-wrap">
-      
+        <div class="row flex flex-wrap card-service">
+          <div class="col-lg-3 flex flex-direction-column justify-content-center">
+            <div class="card-service box-shadow-2 flex justify-content-center align-item-center flex-direction-column text-center">
+              <font-awesome-icon class="tc-purple fs-50" :icon="['fas', 'heart']" />
+              <h1 class="t-margin-0">
+                Vidas
+              </h1>
+              <p class="t-margin-2">
+                Salvar vidas é o nosso objetivo principal
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 flex flex-direction-column justify-content-center">
+            3
+          </div>
+          <div class="col-lg-3 flex flex-direction-column justify-content-center">
+            <div class="card-service box-shadow-2 flex justify-content-center align-item-center flex-direction-column text-center">
+              <font-awesome-icon class="tc-purple fs-50" :icon="['fas', 'heart-pulse']" />
+              <h1 class="t-margin-0">
+                Tratamentos
+              </h1>
+              <p class="t-margin-2">
+                Realizamos os melhores tratamentos, com as principais tecnologias disponíveis do mercado.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 flex flex-direction-column justify-content-center">
+            4
+          </div>
         </div>
       </div>
 

@@ -13,7 +13,9 @@ import {
     faPeopleGroup,
     faUserDoctor,
     faAward,
-    faCircleCheck
+    faCircleCheck,
+    faHeart,
+    faHeartPulse
 } from '@fortawesome/free-solid-svg-icons'
 
 import { 
@@ -36,7 +38,10 @@ library.add(
     faPeopleGroup,
     faUserDoctor,
     faAward,
-    faCircleCheck
+    faCircleCheck,
+    faHeart,
+    faHeartPulse
+
 )
 
 const app = createApp(App)
