@@ -1,12 +1,14 @@
 <script>
 import background from "../assets/images/background.jpeg"
 import brand from "../assets/images/brand.png"
+import doctorAbout from "../assets/images/doctors.jpg"
 
   export default (await import('vue')).defineComponent({
     data(){
       return {
         background,
-        brand
+        brand,
+        doctorAbout
       }
     }
   })
@@ -100,14 +102,42 @@ import brand from "../assets/images/brand.png"
       </div>
       <div class="container t-margin-50">
         <div class="row flex flex-wrap">
-          <div class="col-lg-6 flex flex-direction-column justify-content-center" style="background-color: #999">
-            <div class="box-image-about"></div>
+          <div class="col-lg-6 flex flex-direction-column justify-content-center">
+            <div class="box-image-about">
+              <img :src="doctorAbout" class="doctor-about-image" alt="doctors">
+            </div>
           </div>
-          <div class="col-lg-6 flex flex-direction-column justify-content-center" style="background-color: #ccc">
-            coluna 2
+          <div class="col-lg-6 flex flex-direction-column justify-content-center">
+            <div class="doctorDescription">
+              <h1 class="b-margin-2 tc-gray-300">Sobre o Nosso Hospital</h1>
+
+              <p class="tc-gray-400 fw-6 b-margin-2 line-h-1">O médico é o profissional que busca diagnosticar, tratar e curar pessoas doentes. Ele pode ser generalista, ou seja, atender todos os tipos de encaminhamentos da área médica, ou especializado em alguma atividade ou função específica.               
+              </p>
+
+              <p class="t-margin-2 tc-gray-400">
+                <font-awesome-icon class="tc-purple" :icon="['fas', 'circle-check']" />
+                Navegue em Nosso Site
+              </p>
+              <p class="t-margin-2 tc-gray-400">
+                <font-awesome-icon class="tc-purple" :icon="['fas', 'circle-check']" />
+                Escolha entre vários Serviços
+              </p>
+              <p class="t-margin-2 tc-gray-400 b-margin-2">
+                <font-awesome-icon class="tc-purple" :icon="['fas', 'circle-check']" />
+                Contato direto
+              </p>
+
+              <button class="btn-solid-primary t-margin-3">Agendamentos</button>
+            </div>
           </div>
         </div>
       </div>
+      <div class="container t-margin-50">
+        <div class="row flex flex-wrap">
+      
+        </div>
+      </div>
+
 
     </main>
 
