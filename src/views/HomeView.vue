@@ -133,7 +133,15 @@ import doctorAbout from "../assets/images/doctors.jpg"
         </div>
       </div>
       <div class="container t-margin-50">
-        <div class="row flex flex-wrap card-service">
+        <div class="row flex flex-wrap b-margin-2">
+          <div class="col-lg-12 flex flex-direction-column justify-content-center b-margin-3">
+            <h1>Nossos Serviços</h1>
+            <div class="line">
+              
+            </div>
+          </div>
+        </div>
+        <div class="row flex flex-wrap">
           <div class="col-lg-3 flex flex-direction-column justify-content-center b-margin-3">
             <div class="card-service box-shadow-2 flex justify-content-center align-item-center flex-direction-column text-center">
               <font-awesome-icon class="tc-purple fs-50" :icon="['fas', 'heart']" />
