@@ -134,21 +134,29 @@ import doctorAbout from "../assets/images/doctors.jpg"
       </div>
       <div class="container t-margin-50">
         <div class="row flex flex-wrap card-service">
-          <div class="col-lg-3 flex flex-direction-column justify-content-center">
+          <div class="col-lg-3 flex flex-direction-column justify-content-center b-margin-3">
             <div class="card-service box-shadow-2 flex justify-content-center align-item-center flex-direction-column text-center">
               <font-awesome-icon class="tc-purple fs-50" :icon="['fas', 'heart']" />
               <h1 class="t-margin-0">
                 Vidas
               </h1>
-              <p class="t-margin-2">
+              <p class="t-margin-2 b-margin-6">
                 Salvar vidas é o nosso objetivo principal
               </p>
             </div>
           </div>
-          <div class="col-lg-3 flex flex-direction-column justify-content-center">
-            3
+          <div class="col-lg-3 flex flex-direction-column justify-content-center b-margin-3">
+            <div class="card-service box-shadow-2 flex justify-content-center align-item-center flex-direction-column text-center">
+              <font-awesome-icon class="tc-purple fs-50" :icon="['fas', 'laptop-medical']" />
+              <h1 class="t-margin-0">
+                Teleatendimento
+              </h1>
+              <p class="t-margin-2">
+                Referência em atendimento virtual, nossos profissionais estão completamente capacitados com a tecnologia.
+              </p>
+            </div>
           </div>
-          <div class="col-lg-3 flex flex-direction-column justify-content-center">
+          <div class="col-lg-3 flex flex-direction-column justify-content-center b-margin-3">
             <div class="card-service box-shadow-2 flex justify-content-center align-item-center flex-direction-column text-center">
               <font-awesome-icon class="tc-purple fs-50" :icon="['fas', 'heart-pulse']" />
               <h1 class="t-margin-0">
@@ -159,8 +167,58 @@ import doctorAbout from "../assets/images/doctors.jpg"
               </p>
             </div>
           </div>
+          <div class="col-lg-3 flex flex-direction-column justify-content-center b-margin-3">
+            <div class="card-service box-shadow-2 flex justify-content-center align-item-center flex-direction-column text-center">
+              <font-awesome-icon class="tc-purple fs-50" :icon="['fas', 'microscope']" />
+              <h1 class="t-margin-0">
+                Exames
+              </h1>
+              <p class="t-margin-2">
+                Exames laboratóriais feitos de forma rápida, e com resultados entregues na hora.
+              </p>
+            </div>
+          </div>
           <div class="col-lg-3 flex flex-direction-column justify-content-center">
-            4
+            <div class="card-service box-shadow-2 flex justify-content-center align-item-center flex-direction-column text-center">
+              <font-awesome-icon class="tc-purple fs-50" :icon="['fas', 'tooth']" />
+              <h1 class="t-margin-0">
+                Plano Odontológico
+              </h1>
+              <p class="t-margin-2">
+                Incluso plano odontológico integral.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 flex flex-direction-column justify-content-center">
+            <div class="card-service box-shadow-2 flex justify-content-center align-item-center flex-direction-column text-center">
+              <font-awesome-icon class="tc-purple fs-50" :icon="['fas', 'hospital']" />
+              <h1 class="t-margin-0">
+                Diversas Unidades
+              </h1>
+              <p class="t-margin-2">
+                Existem diversas unidades expalhadas por todo o mundo, prontas para o seu atendimento.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 flex flex-direction-column justify-content-center">
+            <div class="card-service box-shadow-2 flex justify-content-center align-item-center flex-direction-column text-center">
+              <font-awesome-icon class="tc-purple fs-50" :icon="['fas', 'star-of-life']" />              <h1 class="t-margin-0">
+                Pronto Atendimento
+              </h1>
+              <p class="t-margin-2">
+                Possuimos ambulâncias em prontidão para qualquer emergência.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 flex flex-direction-column justify-content-center">
+            <div class="card-service box-shadow-2 flex justify-content-center align-item-center flex-direction-column text-center">
+              <font-awesome-icon class="tc-purple fs-50" :icon="['fas', 'stethoscope']" />              <h1 class="t-margin-0">
+                Maior Grupo
+              </h1>
+              <p class="t-margin-2">
+                Somos o maior grupo do mercado, contemplamos o maior números de especialidades médicas acessíveis.
+              </p>
+            </div>
           </div>
         </div>
       </div>

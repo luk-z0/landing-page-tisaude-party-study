@@ -15,14 +15,20 @@ import {
     faAward,
     faCircleCheck,
     faHeart,
-    faHeartPulse
+    faHeartPulse,
+    faLaptopMedical,
+    faMicroscope,
+    faStethoscope,
+    faStarOfLife,
+    faHospital,
+    faTooth
 } from '@fortawesome/free-solid-svg-icons'
 
 import { 
     faFacebookSquare, 
     faTwitterSquare, 
     faLinkedin, 
-    faInstagramSquare 
+    faInstagramSquare,
 } from '@fortawesome/free-brands-svg-icons'
 
 library.add(
@@ -40,8 +46,13 @@ library.add(
     faAward,
     faCircleCheck,
     faHeart,
-    faHeartPulse
-
+    faHeartPulse,
+    faLaptopMedical,
+    faMicroscope,
+    faStethoscope,
+    faStarOfLife,
+    faHospital,
+    faTooth
 )
 
 const app = createApp(App)
