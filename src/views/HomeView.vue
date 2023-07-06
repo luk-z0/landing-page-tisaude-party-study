@@ -2,16 +2,20 @@
 import background from "../assets/images/background.jpeg"
 import brand from "../assets/images/brand.png"
 import doctorAbout from "../assets/images/doctors.jpg"
+import womanDoctors from "../assets/images/doctorfemale.jpg"
+import doctorLab from "../assets/images/doctorlab.jpg"
 
-  export default (await import('vue')).defineComponent({
-    data(){
-      return {
-        background,
-        brand,
-        doctorAbout
-      }
+export default (await import('vue')).defineComponent({
+  data() {
+    return {
+      background,
+      brand,
+      doctorAbout,
+      womanDoctors,
+      doctorLab
     }
-  })
+  }
+})
 
 
 
@@ -55,25 +59,27 @@ import doctorAbout from "../assets/images/doctors.jpg"
           </ul>
         </nav>
       </div>
-      
+
     </header>
     <main>
-      <div class="background-header" :style="'background-image:url('+background+')'">
+      <div class="background-header" :style="'background-image:url(' + background + ')'">
         <div class="shadow">
           <div class="container-banner flex justify-content-center">
             <div class="container">
               <div class="row flex flex-wrap">
                 <div class="col-lg-6 flex flex-direction-column justify-content-center tc-white p-10">
                   <h1 class="fs-45">Cuidados de saúde excepcionais para todos</h1>
-                  <p class="t-margin-0">Em um dado instante, tudo o que o cirurgião sabe de repente se torna importante para a solução do problema. Você não pode fazer isso uma hora depois ou amanhã. Você também não pode ir à biblioteca e pesquisar</p>
-                  <div class="flex t-margin-3">
+                  <p class="t-margin-5">Em um dado instante, tudo o que o cirurgião sabe de repente se torna importante
+                    para a solução do problema. Você não pode fazer isso uma hora depois ou amanhã. Você também não pode
+                    ir à biblioteca e pesquisar</p>
+                  <div class="flex t-margin-15">
                     <button class="btn-solid-white r-margin-3">Agendamentos</button>
                     <button class="btn-solid-inline">Saiba Mais</button>
                   </div>
                 </div>
                 <div class="col-lg-6">
                 </div>
-              </div>                              
+              </div>
             </div>
           </div>
         </div>
@@ -111,23 +117,25 @@ import doctorAbout from "../assets/images/doctors.jpg"
             <div class="doctorDescription">
               <h1 class="b-margin-2 tc-gray-300">Sobre o Nosso Hospital</h1>
 
-              <p class="tc-gray-400 fw-6 b-margin-2 line-h-1">O médico é o profissional que busca diagnosticar, tratar e curar pessoas doentes. Ele pode ser generalista, ou seja, atender todos os tipos de encaminhamentos da área médica, ou especializado em alguma atividade ou função específica.               
+              <p class="tc-gray-400 fw-6 b-margin-2 line-h-1">O médico é o profissional que busca diagnosticar, tratar e
+                curar pessoas doentes. Ele pode ser generalista, ou seja, atender todos os tipos de encaminhamentos da
+                área médica, ou especializado em alguma atividade ou função específica.
               </p>
 
-              <p class="t-margin-2 tc-gray-400">
+              <p class="t-margin-10 tc-gray-400">
                 <font-awesome-icon class="tc-purple" :icon="['fas', 'circle-check']" />
                 Navegue em Nosso Site
               </p>
-              <p class="t-margin-2 tc-gray-400">
+              <p class="t-margin-10 tc-gray-400">
                 <font-awesome-icon class="tc-purple" :icon="['fas', 'circle-check']" />
                 Escolha entre vários Serviços
               </p>
-              <p class="t-margin-2 tc-gray-400 b-margin-2">
+              <p class="t-margin-10 tc-gray-400 b-margin-2">
                 <font-awesome-icon class="tc-purple" :icon="['fas', 'circle-check']" />
                 Contato direto
               </p>
 
-              <button class="btn-solid-primary t-margin-3">Agendamentos</button>
+              <button class="btn-solid-primary t-margin-15">Agendamentos</button>
             </div>
           </div>
         </div>
@@ -136,106 +144,190 @@ import doctorAbout from "../assets/images/doctors.jpg"
         <div class="row flex flex-wrap b-margin-2">
           <div class="col-lg-12 flex flex-direction-column justify-content-center b-margin-3">
             <h1>Nossos Serviços</h1>
-            <div class="line">
-              
-            </div>
+            <div class="line"> </div>
           </div>
         </div>
         <div class="row flex flex-wrap">
           <div class="col-lg-3 flex flex-direction-column justify-content-center b-margin-3">
-            <div class="card-service box-shadow-2 flex justify-content-center align-item-center flex-direction-column text-center">
+            <div
+              class="card-service box-shadow-2 flex justify-content-center align-item-center flex-direction-column text-center">
               <font-awesome-icon class="tc-purple fs-50" :icon="['fas', 'heart']" />
-              <h1 class="t-margin-0">
+              <h1 class="t-margin-5">
                 Vidas
               </h1>
-              <p class="t-margin-2 b-margin-6">
+              <p class="t-margin-10 b-margin-6">
                 Salvar vidas é o nosso objetivo principal
               </p>
             </div>
           </div>
           <div class="col-lg-3 flex flex-direction-column justify-content-center b-margin-3">
-            <div class="card-service box-shadow-2 flex justify-content-center align-item-center flex-direction-column text-center">
+            <div
+              class="card-service box-shadow-2 flex justify-content-center align-item-center flex-direction-column text-center">
               <font-awesome-icon class="tc-purple fs-50" :icon="['fas', 'laptop-medical']" />
-              <h1 class="t-margin-0">
+              <h1 class="t-margin-5">
                 Teleatendimento
               </h1>
-              <p class="t-margin-2">
+              <p class="t-margin-10">
                 Referência em atendimento virtual, nossos profissionais estão completamente capacitados com a tecnologia.
               </p>
             </div>
           </div>
           <div class="col-lg-3 flex flex-direction-column justify-content-center b-margin-3">
-            <div class="card-service box-shadow-2 flex justify-content-center align-item-center flex-direction-column text-center">
+            <div
+              class="card-service box-shadow-2 flex justify-content-center align-item-center flex-direction-column text-center">
               <font-awesome-icon class="tc-purple fs-50" :icon="['fas', 'heart-pulse']" />
-              <h1 class="t-margin-0">
+              <h1 class="t-margin-5">
                 Tratamentos
               </h1>
-              <p class="t-margin-2">
+              <p class="t-margin-10">
                 Realizamos os melhores tratamentos, com as principais tecnologias disponíveis do mercado.
               </p>
             </div>
           </div>
           <div class="col-lg-3 flex flex-direction-column justify-content-center b-margin-3">
-            <div class="card-service box-shadow-2 flex justify-content-center align-item-center flex-direction-column text-center">
+            <div
+              class="card-service box-shadow-2 flex justify-content-center align-item-center flex-direction-column text-center">
               <font-awesome-icon class="tc-purple fs-50" :icon="['fas', 'microscope']" />
-              <h1 class="t-margin-0">
+              <h1 class="t-margin-5">
                 Exames
               </h1>
-              <p class="t-margin-2">
+              <p class="t-margin-10">
                 Exames laboratóriais feitos de forma rápida, e com resultados entregues na hora.
               </p>
             </div>
           </div>
           <div class="col-lg-3 flex flex-direction-column justify-content-center">
-            <div class="card-service box-shadow-2 flex justify-content-center align-item-center flex-direction-column text-center">
+            <div
+              class="card-service box-shadow-2 flex justify-content-center align-item-center flex-direction-column text-center">
               <font-awesome-icon class="tc-purple fs-50" :icon="['fas', 'tooth']" />
-              <h1 class="t-margin-0">
+              <h1 class="t-margin-5">
                 Plano Odontológico
               </h1>
-              <p class="t-margin-2">
+              <p class="t-margin-10">
                 Incluso plano odontológico integral.
               </p>
             </div>
           </div>
           <div class="col-lg-3 flex flex-direction-column justify-content-center">
-            <div class="card-service box-shadow-2 flex justify-content-center align-item-center flex-direction-column text-center">
+            <div
+              class="card-service box-shadow-2 flex justify-content-center align-item-center flex-direction-column text-center">
               <font-awesome-icon class="tc-purple fs-50" :icon="['fas', 'hospital']" />
-              <h1 class="t-margin-0">
+              <h1 class="t-margin-5">
                 Diversas Unidades
               </h1>
-              <p class="t-margin-2">
+              <p class="t-margin-10">
                 Existem diversas unidades expalhadas por todo o mundo, prontas para o seu atendimento.
               </p>
             </div>
           </div>
           <div class="col-lg-3 flex flex-direction-column justify-content-center">
-            <div class="card-service box-shadow-2 flex justify-content-center align-item-center flex-direction-column text-center">
-              <font-awesome-icon class="tc-purple fs-50" :icon="['fas', 'star-of-life']" />              <h1 class="t-margin-0">
+            <div
+              class="card-service box-shadow-2 flex justify-content-center align-item-center flex-direction-column text-center">
+              <font-awesome-icon class="tc-purple fs-50" :icon="['fas', 'star-of-life']" />
+              <h1 class="t-margin-5">
                 Pronto Atendimento
               </h1>
-              <p class="t-margin-2">
+              <p class="t-margin-10">
                 Possuimos ambulâncias em prontidão para qualquer emergência.
               </p>
             </div>
           </div>
           <div class="col-lg-3 flex flex-direction-column justify-content-center">
-            <div class="card-service box-shadow-2 flex justify-content-center align-item-center flex-direction-column text-center">
-              <font-awesome-icon class="tc-purple fs-50" :icon="['fas', 'stethoscope']" />              <h1 class="t-margin-0">
+            <div
+              class="card-service box-shadow-2 flex justify-content-center align-item-center flex-direction-column text-center">
+              <font-awesome-icon class="tc-purple fs-50" :icon="['fas', 'stethoscope']" />
+              <h1 class="t-margin-5">
                 Maior Grupo
               </h1>
-              <p class="t-margin-2">
+              <p class="t-margin-10">
                 Somos o maior grupo do mercado, contemplamos o maior números de especialidades médicas acessíveis.
               </p>
+            </div>
+        </div>
+        </div>
+        <div class="row flex flex-wrap t-margin-50">
+          <div class="row flex flex-wrap b-margin-2">
+            <div class="col-lg-12 flex flex-direction-column justify-content-center b-margin-3">
+              <h1>Nossos Especialidades</h1>
+              <div class="line"></div>
+            </div>
+            <div class="row flex flex-wrap t-margin-10">
+              <div class="col-lg-6 flex justify-content-center flex-wrap">
+                  <div class="col-lg-6 flex justify-content-center b-margin-3">
+                    <div
+                      class="card-service box-shadow-2 flex justify-content-center align-item-center flex-direction-column text-center">
+                      <font-awesome-icon class="tc-purple fs-50" :icon="['fas', 'heart']" />
+                      <h1 class="t-margin-5">
+                        Vidas
+                      </h1>
+                      <p class="t-margin-10 b-margin-6">
+                        Salvar vidas é o nosso objetivo principal
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 flex b-margin-3">
+                    <div
+                      class="card-service box-shadow-2 flex justify-content-center align-item-center flex-direction-column text-center">
+                      <font-awesome-icon class="tc-purple fs-50" :icon="['fas', 'heart']" />
+                      <h1 class="t-margin-5">
+                        Vidas
+                      </h1>
+                      <p class="t-margin-10 b-margin-6">
+                        Salvar vidas é o nosso objetivo principal
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 flex flex-direction-around justify-content-center b-margin-3">
+                    <div
+                      class="card-service box-shadow-2 flex justify-content-center align-item-center flex-direction-column text-center">
+                      <font-awesome-icon class="tc-purple fs-50" :icon="['fas', 'heart']" />
+                      <h1 class="t-margin-5">
+                        Vidas
+                      </h1>
+                      <p class="t-margin-10 b-margin-6">
+                        Salvar vidas é o nosso objetivo principal
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 flex flex-direction-around justify-content-center b-margin-3">
+                    <div
+                      class="card-service box-shadow-2 flex justify-content-center align-item-center flex-direction-column text-center">
+                      <font-awesome-icon class="tc-purple fs-50" :icon="['fas', 'heart']" />
+                      <h1 class="t-margin-5">
+                        Vidas
+                      </h1>
+                      <p class="t-margin-10 b-margin-6">
+                        Salvar vidas é o nosso objetivo principal
+                      </p>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-6 flex flex-direction-column justify-content-center">
+                <div class="box-image-about">
+                  <img :src="womanDoctors" class="doctor-about-image" alt="doctors">
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="background-header" :style="'background-image:url(' + doctorLab + ')'">
+        <div class="container-banner shadow flex justify-content-center">
+            <div class="container">
+              <div class="tc-white text-center">
+                <h3>Sobre a Ti Saúde</h3>
+              </div>
+              <div class="tc-white text-justify flex justify-content-center">
+                  <p>Os médicos são responsáveis por cuidar da saúde de todos nós. Eles atuam tanto de forma preventiva, antevendo a possíveis doenças e indicando caminhos para se preveni-las de forma ativa no diagnóstico, o que passa principalmente pelo cuidado das enfermidades encontradas.</p>
+              </div>
+            </div>
+        </div>
+      </div>
 
+  </main>
 
-    </main>
+  <footer>
 
-    <footer>
-
-    </footer>
-  </div>
+  </footer>
+</div>
 </template>
