@@ -312,17 +312,29 @@ export default (await import('vue')).defineComponent({
         </div>
       </div>
       <div class="background-header" :style="'background-image:url(' + doctorLab + ')'">
-        <div class="container-banner shadow flex justify-content-center">
+        <div class="container-banner shadow flex justify-content-center align-item-center">
             <div class="container">
               <div class="tc-white text-center">
                 <h3>Sobre a Ti Saúde</h3>
               </div>
               <div class="tc-white text-justify flex justify-content-center">
-                  <p>Os médicos são responsáveis por cuidar da saúde de todos nós. Eles atuam tanto de forma preventiva, antevendo a possíveis doenças e indicando caminhos para se preveni-las de forma ativa no diagnóstico, o que passa principalmente pelo cuidado das enfermidades encontradas.</p>
+                  <p>Os médicos são responsáveis por cuidar da saúde de todos nós. Eles atuam tanto de forma preventiva, <br> antevendo a possíveis doenças e indicando caminhos para se preveni-las de forma ativa no diagnóstico,<br> o que passa principalmente pelo cuidado das enfermidades encontradas.</p>
               </div>
             </div>
         </div>
       </div>
+
+      <dir class="col-lg-12 p-0 flex flex-direction-row flex-wrap">
+        <div class="noticeNavigation">
+            <ul>
+              <li class="noticeActive">Sobre a Ti</li>
+              <li>Farmácia</li>
+              <li>Pesquisas</li>
+              <li>CCU & ICU</li>
+              <li>Médicos</li>
+            </ul>
+        </div>
+      </dir>
 
   </main>
 
